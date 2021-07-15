@@ -1,0 +1,27 @@
+﻿kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: user-ca-bundle
+  namespace: openshift-config
+data:
+  ca-bundle.crt: |
+    # Test self-signed CA from user-ca-bundle in openshift-config namespace
+    -----BEGIN CERTIFICATE-----
+    MIIDGDCCAgCgAwIBAgIQbQMSKZXbakxROGJJH6y9qjANBgkqhkiG9w0BAQsFADAm
+    MSQwIgYDVQQDExtjYS5zZWxmLXNpZ25lci5jZXJ0LW1hbmFnZXIwHhcNMjEwNzE1
+    MTYyNDA5WhcNMjExMDEzMTYyNDA5WjAmMSQwIgYDVQQDExtjYS5zZWxmLXNpZ25l
+    ci5jZXJ0LW1hbmFnZXIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDk
+    J3tVJf+jdk0P8z7J1NQ90zRZN3D5akgQwfvFLxODOHYGbkiBlWn0u1XwL6i4N2y+
+    lI861tMCLlWkJSf6NiNJf7GxMBG5IGrNNsAk9rEJRaKLwNfF7T5KY9hYi4cVaRfC
+    WnplrhjBF9szJ1Sq9aU1z/+lLZDYUNd5+Rbm5FyjwlV4ehN5wMKdA4eb6uE3bocb
+    81PBpC0mD8k+uG/KMjKa33S2alORG51OaUE/VZQLlOtecEL99detQsBXqEVT6KFR
+    IJ9bD88ybk8LCsuZ4kUY4shzcxMuBIMDlB5m/8RuF3yC6VvJhST/SnX9yIUC9piR
+    zG/xCYYuZm1BTPnH8HWPAgMBAAGjQjBAMA4GA1UdDwEB/wQEAwICpDAPBgNVHRMB
+    Af8EBTADAQH/MB0GA1UdDgQWBBSCtHmlKtEja+F0Jpnk9f5r8XIDwTANBgkqhkiG
+    9w0BAQsFAAOCAQEAQyN18G86yX0jo/n8Xhw8Jh5hj48sq3lZjqUBpogGen/nuuA/
+    T5bzfIKwfy9N0QzWTAeuPR3cN3PpgvZGBQ7xbfaMyRgDH7Hdg663EQWCgob7TILy
+    Z54lHA6FAz3fGosOOeeVhoFnSdPfk6tsLKzfBV3tEH2zZD9iC0+Wo6fwasbkUsFK
+    YgIJNoPRBsn1AtAD5S+Cby74kr98RfkJ/bMc8EFga/OLxOgivrYg0nEKPqBvLNck
+    rlov2ZJV5YrKGQoUVlvW9n3++lzzr54Pr5qbN0XPr6izIpbL+NhYo1kDdDytrd8Q
+    oS2pEQDmDGJC+2kGIeLb8EybiDAYNu1N1bt6xg==
+    -----END CERTIFICATE-----
