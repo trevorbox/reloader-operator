@@ -45,7 +45,7 @@ oc patch proxy cluster --type merge -p '{"spec":{"trustedCA":{"name":"user-ca-bu
 oc describe configmap trusted-cabundle -n reloader-operator-test | egrep "Test self-signed CA"
 ```
 
-You should see the comment listed.
+You should see the comment listed. The trusted-cabundle configmap automatically updates.
 
 ## Test automated reloading when the configmap changes
 
