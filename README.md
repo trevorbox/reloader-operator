@@ -1,5 +1,8 @@
 # reloader-operator
+
 Example using stakater/Reloader operator. 
+
+This is useful for situations where a pod should automatically restart in the event a secret or configmap changes (such as a trusted CA certificate) since an application may only read in the mounted file at startup.
 
 This also shows how to add a trusted CA to an OCP cluster. See <https://docs.openshift.com/container-platform/4.7/networking/configuring-a-custom-pki.html>.
 
