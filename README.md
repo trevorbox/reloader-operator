@@ -13,7 +13,6 @@ helm repo add stakater https://stakater.github.io/stakater-charts
 helm repo update
 helm upgrade -i stakater stakater/reloader -n reloader-operator --create-namespace \
   --set reloader.isOpenshift=true \
-  --set reloader.readOnlyRootFileSystem=false \
   --set reloader.deployment.securityContext.runAsUser=null
 ```
 
@@ -25,7 +24,7 @@ helm upgrade -i stakater stakater/reloader -n reloader-operator --create-namespa
 helm upgrade -i app helm/app -n reloader-operator-test --create-namespace
 ```
 
-## Test adding a new CA to 
+## Test adding an additional trust bundle to the cluster
 
 > <https://docs.openshift.com/container-platform/4.7/networking/configuring-a-custom-pki.html>
 
